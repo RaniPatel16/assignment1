@@ -1,0 +1,363 @@
+/* General Body Styles */
+/* body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Main container for the form */
+/* .signup-container {
+    width: 100%;
+    padding: 20px;
+}
+
+/* The white box holding the form content */
+/* .signup-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.signup-box h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #1c1e21;
+}
+
+.signup-box p {
+    margin-bottom: 25px;
+    color: #606770;
+    font-size: 16px;
+}
+
+/* Styling for each input field group (label + input) */
+/*  */
+ <style>
+        /* --- General Variables & Setup --- */
+        :root {
+            --primary-color: #007bff; /* Blue */
+            --success-color: #28a745; /* Green */
+            --light-text: #fff;
+            --dark-text: #1c1e21;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            
+            /* Auto-changing background gradient (The subtle animation makes it feel alive) */
+            background: linear-gradient(270deg, #ff7e5f, #feb47b, #86a8e7, #5ffbf1);
+            background-size: 800% 800%;
+            animation: colorCycle 20s ease infinite;
+        }
+
+        /* --- Background Animations --- */
+        @keyframes colorCycle {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Animated Background Blobs */
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.5;
+            z-index: 0;
+            transition: all 0.5s ease-out; /* Added transition for media query smoothness */
+        }
+
+        .blob1 {
+            width: 400px;
+            height: 400px;
+            background: #ff6b6b;
+            top: -150px;
+            left: -150px;
+            animation: move 20s infinite alternate;
+        }
+
+        .blob2 {
+            width: 300px;
+            height: 300px;
+            background: #feca57;
+            bottom: -100px;
+            right: -100px;
+            animation: move 25s infinite alternate-reverse;
+        }
+
+        @keyframes move {
+            from {
+                transform: translate(0, 0) rotate(0deg);
+            }
+            to {
+                transform: translate(200px, 100px) rotate(360deg);
+            }
+        }
+        
+        /* --- Mobile Responsiveness: Scale down the blobs --- */
+        @media (max-width: 600px) {
+            .blob1 { width: 250px; height: 250px; top: -100px; left: -100px; }
+            .blob2 { width: 200px; height: 200px; bottom: -50px; right: -50px; }
+            @keyframes move {
+                to {
+                    transform: translate(100px, 50px) rotate(360deg);
+                }
+            }
+        }
+
+
+        /* --- Glassmorphism Card Style --- */
+        .signup-box {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px); /* For Safari compatibility */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+            z-index: 1; /* Ensure form is above blobs */
+            animation: slideIn 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(50px) scale(0.9); }
+            to { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        .signup-box h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 28px;
+            color: var(--light-text);
+        }
+
+        .signup-box p {
+            margin-bottom: 30px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 16px;
+        }
+        
+        /* --- NEW PROFESSIONAL ANIMATION: Staggered Fade In for Inputs --- */
+        @keyframes inputFadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Apply base animation to all animated elements inside the form */
+        .input-group, button, .login-link {
+            opacity: 0;
+            animation: inputFadeIn 0.4s ease-out forwards;
+        }
+
+        /* Stagger the animation timing */
+        .signup-box form .input-group:nth-child(1) { animation-delay: 0.1s; } /* Full Name */
+        .signup-box form .input-group:nth-child(2) { animation-delay: 0.2s; } /* Email */
+        .signup-box form .input-group:nth-child(3) { animation-delay: 0.3s; } /* Company Name */
+        .signup-box form .input-group:nth-child(4) { animation-delay: 0.4s; } /* Country */
+        .signup-box form .input-group:nth-child(5) { animation-delay: 0.5s; } /* Password */
+        
+        .signup-box button { animation-delay: 0.7s !important; }
+        .signup-box .login-link { animation-delay: 0.8s !important; }
+
+
+        /* --- Input Group & Floating Label --- */
+        .input-group {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .input-group input,
+        .input-group select {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+            background: transparent;
+            color: var(--light-text);
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        
+        /* --- NEW PROFESSIONAL ANIMATION: Input Hover Glow --- */
+        .input-group input:hover,
+        .input-group select:hover {
+            border-color: rgba(255, 255, 255, 0.6); 
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.15); /* Soft white glow effect */
+        }
+        
+        .input-group select { 
+            appearance: none; 
+        }
+
+        /* --- Select Custom Arrow (for visual consistency) --- */
+        .input-group.select-group::after {
+            content: '▼';
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            color: rgba(255, 255, 255, 0.8);
+            pointer-events: none;
+            font-size: 12px;
+        }
+        
+        .input-group select option {
+            /* Ensures options in the dropdown menu are visible */
+            color: var(--dark-text); 
+            background: #fff;
+        }
+
+
+        .input-group input::placeholder { color: transparent; }
+
+        .input-group label {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 16px;
+            pointer-events: none;
+            transition: all 0.3s ease-out;
+        }
+
+        .input-group input:focus + label,
+        .input-group input:not(:placeholder-shown) + label,
+        .input-group select:valid + label {
+            top: -10px;
+            left: 10px;
+            transform: scale(0.85);
+            background-color: var(--primary-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: var(--light-text);
+            font-weight: 600;
+        }
+        
+        .input-group input:focus,
+        .input-group select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 1px var(--primary-color);
+        }
+
+        /* --- Validation Checkmark (Appears when input is valid) --- */
+        .validation-icon {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%) scale(0);
+            width: 20px;
+            height: 20px;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Added spring effect */
+            z-index: 2;
+        }
+
+        .input-group input:valid:not(:focus) + label + .validation-icon {
+            transform: translateY(-50%) scale(1.2);
+        }
+        
+        /* --- Password Toggle Button --- */
+        .toggle-password {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.7);
+            cursor: pointer;
+            padding: 5px;
+            z-index: 3;
+            font-size: 16px;
+            line-height: 1;
+            transition: color 0.2s; /* Professional touch: transition on color change */
+        }
+        
+        .toggle-password:hover {
+            color: var(--light-text);
+        }
+        
+        /* Offset the checkmark when the toggle button is present */
+        .password-group input:valid:not(:focus) + label + .validation-icon {
+             right: 45px;
+             
+    
+        }
+
+
+        /* --- Submit Button --- */
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--light-text);
+            color: var(--primary-color);
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease-out;
+            margin-bottom: 25px;
+            /* Added shadow for depth */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+        }
+
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+            background-color: #f0f0f0;
+        }
+        
+        /* --- NEW PROFESSIONAL ANIMATION: Immediate Press Feedback --- */
+        button:active {
+            transform: translateY(0);
+            /* Flash of color and tight shadow for immediate feedback */
+            box-shadow: 0 0 0 2px var(--primary-color), 0 4px 15px rgba(0, 0, 0, 0.2); 
+            background-color: var(--primary-color); 
+            color: var(--light-text);
+            transition: all 0.05s ease-in; /* Quick transition for press */
+        }
+
+        /* --- Link for users who already have an account --- */
+        .login-link {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .login-link a {
+            color: var(--light-text);
+            text-decoration: none;
+            font-weight: 700;
+            padding-bottom: 2px;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.2s;
+        }
+
+        .login-link a:hover {
+            border-bottom: 2px solid var(--light-text);
+        }
+
+    </style>
