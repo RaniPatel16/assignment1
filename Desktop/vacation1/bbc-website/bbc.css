@@ -1,0 +1,1670 @@
+
+Basic Reset
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    border-bottom: 1px solid #ccc;
+    padding: 0 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.eq-logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333; /* Placeholder for actual EQ logo style */
+}
+
+.bbc-logo-container {
+    flex-grow: 1; /* Pushes the logo to the center */
+    text-align: center;
+}
+
+.bbc-logo {
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+    background-color: #000;
+    padding: 2px 10px;
+    border-radius: 4px;
+}
+
+.account-actions button {
+    padding: 5px 10px;
+    border: 1px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+}
+
+nav ul li a {
+    padding: 0 15px 0 0;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* 1 */
+
+.main-content {
+    display: flex;
+    padding: 20px;
+    gap: 20px; 
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-column {
+    flex: 2; 
+}
+
+.center-column {
+    flex: 2; 
+}
+
+.right-column {
+    flex: 1; 
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+}
+
+
+.story-block {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.story-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+.story-image-container {
+    margin-bottom: 10px;
+}
+
+.story-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.large-story h3 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 5px 0;
+}
+
+.main-center-story h2 {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin: 5px 0;
+}
+
+.small-story h4 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0 0 5px 0;
+}
+
+.summary {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.meta {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+
+
+.bottom-left-story {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+/* --- Section Styling --- */
+.weekend-reads-section {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.section-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+/* --- Flex Container  Two Columns --- */
+.flex-container {
+    display: flex;
+    gap: 30px; 
+}
+
+.read-item {
+    flex: 1; 
+    margin-bottom: 20px;
+}
+
+.image-container {
+    margin-bottom: 10px;
+}
+
+.article-image {
+    width: 100;
+    display: block; 
+    height: auto;
+}
+
+
+.article-title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 5px 0 10px 0;
+    color: #000;
+}
+
+.article-summary {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3e3b3b; 
+}
+
+.separator {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+
+/* 3 */
+
+
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+.live-news-block {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.section-link {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+}
+
+
+.content-flex-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start; 
+}
+
+.image-column {
+    flex: 2; 
+}
+
+.main-image {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+
+.text-column {
+    flex: 1; 
+}
+
+.live-status {
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.live-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #e50000; 
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.live-text {
+    color: #e50000;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.live-title {
+    font-size: 28px;
+    font-weight: 900; 
+    display: block;
+    color: #000;
+    margin-top: 5px;
+}
+
+.summary-text {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.see-more-button {
+    padding: 10px 15px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    text-transform: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+
+/* 4 */
+
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+
+.dark-promo-block {
+    background-color: #1a1a1a; 
+    color: #fff; 
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-link {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: block;
+}
+.content-flex-container {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+.visual-column {
+    flex: 3; 
+    display: flex;
+    gap: 10px; 
+}
+
+.image-container {
+    flex: 1; 
+}
+
+.visual-image {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+
+.text-column {
+    flex: 2; 
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 900; 
+    line-height: 1.1;
+    margin: 0 0 15px 0;
+    color: #fff;
+}
+
+.summary-text {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #ccc; 
+    margin-bottom: 20px;
+}
+
+.see-more-button {
+    padding: 10px 15px;
+    border: 1px solid #fff; 
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    width: fit-content; 
+    margin-bottom: 40px;
+}
+
+
+.branding {
+    margin-top: auto; 
+    text-align: right;
+}
+
+.partnership-text {
+    font-size: 12px;
+    color: #aaa;
+    margin: 0 0 5px 0;
+}
+
+.rolex-logo-placeholder {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+
+}
+
+
+
+/* 5 */
+
+
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+
+.audio-week-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.header-and-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.section-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.carousel-controls .control-arrow {
+    background: none;
+    border: 1px solid #ccc;
+    color: #000;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.carousel-container {
+    display: flex;
+    overflow-x: scroll; 
+    white-space: nowrap; 
+    padding-bottom: 10px; 
+    gap: 15px; 
+}
+
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+.carousel-container {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+
+.audio-item {
+    flex: 0 0 auto; 
+    width: 150px; 
+    display: inline-block; 
+    white-space: normal;
+}
+
+.image-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.audio-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.audio-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 3px 5px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+.category {
+    font-size: 12px;
+    color: #999;
+    margin: 0;
+}
+
+.item-title {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 5px 0;
+}
+
+.metadata {
+    font-size: 12px;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+}
+
+.save-icon {
+    
+    color: #e50000; 
+}
+
+
+
+/* 6 */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+.news-grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.section-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+
+    
+}
+
+
+.top-row-grid {
+    display: grid;
+    
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.top-story-live {
+    
+    border-left: 1px solid #eee;
+    padding-left: 20px;
+}
+
+.top-story-text h1 {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.1;
+    margin: 0 0 10px 0;
+}
+
+.summary {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #555;
+    margin: 5px 0;
+}
+
+.meta {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+
+.top-story-live .live-tag {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e50000; 
+    margin-bottom: 10px;
+}
+
+.top-story-live h3 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 5px 0 10px 0;
+}
+
+
+.main-image,
+.live-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bottom-row-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.bottom-story .image-container {
+    margin-bottom: 10px;
+    
+}
+
+.bottom-story .story-image {
+    width: 100%;
+    height: 100px; 
+    object-fit: cover;
+    display: block;
+}
+
+.bottom-story h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 5px 0;
+}
+
+
+.nested-story {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.nested-story h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 5px 0;
+}
+
+/* 7 */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; 
+}
+
+.editors-picks-section {
+    background-color: #1a1a1a; 
+    color: #fff; 
+    padding: 20px 0;
+    width: 100%;
+}
+
+
+.header-and-controls {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333; 
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.carousel-controls .control-arrow {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+.carousel-container {
+    display: flex;
+    gap: 20px; 
+    
+    overflow-x: scroll; 
+    white-space: nowrap; 
+    padding: 0 20px 10px 20px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+.carousel-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+.article-item {
+    flex: 0 0 220px; 
+    display: inline-block;
+    white-space: normal;
+    padding-bottom: 5px;
+}
+
+
+.article-item.partial-view {
+    flex: 0 0 180px;
+    opacity: 0.8;
+}
+
+.image-container {
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.article-image {
+    width: 100%;
+    height: 120px; 
+    object-fit: cover;
+    display: block;
+}
+
+.video-icon {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background-color: #e50000;
+    color: #fff;
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 2px;
+}
+
+
+.item-title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0 0 5px 0;
+    color: #fff;
+}
+
+.summary {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #ccc;
+    margin: 5px 0;
+}
+
+.meta {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+/* 8 */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+
+.history-story-block {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.section-link {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc; 
+    display: inline-block;
+}
+.content-flex-container {
+    display: flex;
+    gap: 40px; 
+    align-items: flex-start; 
+}
+
+
+.image-column {
+    flex: 2; 
+}
+
+.main-image {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+
+.text-column {
+    flex: 1; 
+    padding-top: 20px;
+}
+
+.headline {
+    font-size: 28px;
+    font-weight: 900; 
+    line-height: 1.1;
+    margin: 0 0 15px 0;
+    color: #000;
+}
+
+.summary-text {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.see-more-button {
+    padding: 10px 15px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    text-transform: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* 9 */
+
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+/* --- Section and Link --- */
+.business-story-block {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.section-link {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc; 
+    display: inline-block;
+}
+
+
+.content-flex-container {
+    display: flex;
+    gap: 40px; 
+    align-items: flex-start; 
+}
+
+.text-column {
+    flex: 1;
+    padding-top: 20px; 
+}
+
+.headline {
+    font-size: 32px;
+    font-weight: 900; 
+    line-height: 1.1;
+    margin: 0 0 15px 0;
+    color: #000;
+}
+
+.summary-text {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.see-more-button {
+    padding: 10px 15px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    text-transform: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* --- Right Column: Image --- */
+.image-column {
+    flex: 1.5; 
+}
+
+.main-image {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+/* 10 */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+.news-grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.column-headers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    border-bottom: 1px solid #000; 
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.column-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.column-title a {
+    text-decoration: none;
+    color: #000;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+}
+
+
+.news-column:not(:last-child) {
+    border-right: 1px solid #eee;
+    padding-right: 20px;
+}
+
+.news-column:not(:first-child) {
+    padding-left: 0;
+}
+
+.story-block {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee; 
+}
+
+.story-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+.image-story .image-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.story-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-icon {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background-color: #e50000; 
+    color: #fff;
+    padding: 2px 5px;
+    font-size: 10px;
+    border-radius: 2px;
+}
+
+
+.story-title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0 0 5px 0;
+}
+
+.summary {
+    font-size: 13px;
+    line-height: 1.4;
+    color: #555;
+    margin: 0;
+}
+/* 11 */
+
+
+
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+
+.latest-audio-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.header-and-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.section-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.carousel-controls .control-arrow {
+    background: none;
+    border: 1px solid #ccc;
+    color: #000;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* --- Carousel Container (The main horizontal scroll) --- */
+.carousel-container {
+    display: flex;
+    overflow-x: scroll; 
+    padding-bottom: 10px; 
+    gap: 15px; 
+    white-space: nowrap; 
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+.carousel-container {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+/* --- Audio Item Styling --- */
+.audio-item {
+    flex: 0 0 auto;
+    width: 130px; 
+    display: inline-block;
+    white-space: normal;
+}
+
+.audio-item.partial-view {
+    opacity: 0.8; 
+}
+
+.image-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.audio-image {
+    width: 100%;
+
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;
+    display: block;
+}
+
+.audio-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 3px 5px;
+    font-size: 10px;
+    border-radius: 2px;
+}
+
+.category {
+    font-size: 11px;
+    color: #999;
+    margin: 0;
+}
+
+.item-title {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.3;
+
+    height: 34px; 
+    overflow: hidden;
+    margin: 3px 0;
+}
+
+.metadata {
+    font-size: 10px;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.save-icon {
+    color: #e50000; 
+}
+
+
+.bottom-separator {
+    max-width: 1200px;
+    margin: 20px auto 0 auto;
+    border-top: 1px solid #ccc;
+}
+
+/* last */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* --- Dark Container --- */
+.discover-more-section {
+    background-color: #1a1a1a; 
+    color: #fff; 
+    padding: 20px 0;
+    width: 100%;
+}
+
+
+.header-and-controls {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.carousel-controls .control-arrow {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* --- Carousel Container --- */
+.carousel-container {
+    display: flex;
+    gap: 20px; 
+    
+    overflow-x: scroll; 
+    white-space: nowrap; 
+    padding: 0 20px 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+.carousel-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* --- Promotional Item Styling --- */
+.promo-item {
+    flex: 0 0 200px; 
+    display: inline-block;
+    white-space: normal;
+}
+
+
+.promo-item.partial-view {
+    flex: 0 0 150px;
+    opacity: 0.8;
+}
+
+.image-container {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.item-image {
+    width: 100%;
+    
+    aspect-ratio: 1 / 1; 
+    object-fit: cover;
+    display: block;
+}
+
+
+.item-title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0 0 5px 0;
+    color: #fff;
+}
+
+.summary {
+    font-size: 13px;
+    line-height: 1.4;
+    color: #ccc;
+    margin: 0;
+}
+
+
+/* fotter */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.bbc-footer {
+    background-color: #f6efef; 
+    color: #a9a9a9; 
+    padding: 30px 20px 20px;
+    width: 100%;
+}
+
+.footer-content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.bbc-logo-container {
+    margin-bottom: 20px;
+}
+
+.bbc-logo {
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+    background-color: #000;
+    padding: 2px 10px;
+    border-radius: 4px;
+}
+
+.footer-nav-primary ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #a9a9a9;
+}
+
+
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #333; 
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+.language-selector select {
+    background-color: #333; /* Dark background for the dropdown */
+    color: #fff;
+    border: 1px solid #666;
+    padding: 8px 12px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.social-links-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.follow-text {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.social-icons a {
+    font-size: 18px;
+    padding: 0 5px;
+    color: #a9a9a9;
+}
+
+/* --- Bottom Section: Legal Links and Copyright --- */
+.footer-nav-legal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 15px;
+    font-size: 11px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.footer-nav-legal a {
+    color: #979595;
+}
+
+.copyright {
+    font-size: 11px;
+    color: #e00808;
+    text-align: center;
+    line-height: 1.4;
+}
+
+
+
+
+
+
+
+
+
+/* --- START MOBILE RESPONSIVE STYLES (Max-Width 767px) --- */
+@media (max-width: 767px) {
+
+    /* Header Adjustments */
+    header {
+        padding: 0 10px;
+    }
+    .header-top {
+        flex-wrap: wrap;
+    }
+    .eq-logo {
+        order: 1; /* Left side */
+        margin-right: auto;
+    }
+    .bbc-logo-container {
+        order: 3; /* Center it below/on its own line if needed, but here we center it between the other two */
+        flex-basis: 100%; /* Take full width on a new line */
+        text-align: center;
+        padding: 10px 0;
+    }
+    .account-actions {
+        order: 2; /* Right side */
+        margin-left: auto;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        padding: 10px 0;
+    }
+    nav ul li a {
+        padding: 5px 10px;
+        font-size: 13px;
+    }
+
+    /* --- 1. Main Content Grid & Columns: Stacked --- */
+    .main-content {
+        flex-direction: column;
+        padding: 10px;
+        gap: 0;
+    }
+
+    .left-column,
+    .center-column,
+    .right-column {
+        flex: none; /* Remove flex sizing */
+        width: 100%;
+        padding-left: 0;
+        border-left: none;
+    }
+    .right-column {
+        /* Add a clear visual break between the center and right columns when stacked */
+        border-top: 1px solid #ccc;
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+    .main-center-story h2 {
+        font-size: 24px;
+    }
+
+    /* --- 2. Weekend Reads Section: Stacked --- */
+    .weekend-reads-section {
+        padding: 10px;
+    }
+    .flex-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* --- 3. Live News Block: Stacked --- */
+    .live-news-block {
+        padding: 10px;
+    }
+    .live-news-block .content-flex-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .live-title {
+        font-size: 24px;
+    }
+
+    /* --- 4. Dark Promo Block: Stacked --- */
+    .dark-promo-block {
+        padding: 15px;
+    }
+    .dark-promo-block .content-flex-container {
+        flex-direction: column-reverse; /* Put text first */
+    }
+    .visual-column {
+        flex-direction: column; /* Stack the two small images */
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+    .dark-promo-block h1 {
+        font-size: 26px;
+    }
+    .branding {
+        text-align: left;
+    }
+
+    /* --- 5. & 11. Audio Carousels: Focus on scroll (No change needed to flex-scroll structure) --- */
+    .audio-week-section, .latest-audio-section {
+        padding: 0 10px 20px 10px;
+    }
+    .carousel-controls {
+        display: none; /* Hide navigation buttons on mobile */
+    }
+    .audio-item {
+        width: 140px; /* Slightly larger/more manageable width */
+    }
+
+    /* --- 6. News Grid Container: Stacked --- */
+    .top-row-grid {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 20px;
+    }
+    .top-story-live {
+        border-left: none;
+        border-top: 1px solid #eee;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+    .top-story-text h1 {
+        font-size: 24px;
+    }
+    .bottom-row-grid {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 20px;
+    }
+
+    /* --- 7. Editors Picks Section: Focus on scroll (No change needed to flex-scroll structure) --- */
+    .editors-picks-section .carousel-container {
+        padding: 0 10px 10px 10px;
+    }
+    .article-item {
+        flex: 0 0 260px; /* Wider card for better viewability on mobile */
+    }
+    .article-item.partial-view {
+        /* Remove the partial view/opacity effect as it's less critical on mobile horizontal scroll */
+        opacity: 1;
+        flex: 0 0 260px;
+    }
+
+    /* --- 8. History Story Block: Stacked --- */
+    .history-story-block {
+        padding: 10px;
+    }
+    .history-story-block .content-flex-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .history-story-block .text-column {
+        padding-top: 0;
+    }
+    .history-story-block .headline {
+        font-size: 24px;
+    }
+
+    /* --- 9. Business Story Block: Stacked --- */
+    .business-story-block {
+        padding: 10px;
+    }
+    .business-story-block .content-flex-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .business-story-block .text-column {
+        padding-top: 0;
+    }
+    .business-story-block .headline {
+        font-size: 26px;
+    }
+
+    /* --- 10. Four-Column Grid News: Stacked (Single Column) --- */
+    .column-headers-grid,
+    .content-grid {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 20px;
+    }
+    .news-column:not(:last-child) {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .news-column:not(:first-child) {
+        padding-left: 0;
+    }
+    .story-block:last-child {
+        border-bottom: 1px solid #eee; /* Restore border for separation between stacked columns */
+    }
+    .news-column:last-child .story-block:last-child {
+        border-bottom: none; /* Last story block on the page should have no border */
+    }
+
+    /* --- Last. Discover More Section (Dark Carousel): Focus on scroll --- */
+    .discover-more-section .carousel-container {
+        padding: 0 10px 10px 10px;
+    }
+    .promo-item {
+        flex: 0 0 200px; /* Slightly larger card for better viewability on mobile */
+    }
+    .promo-item.partial-view {
+        opacity: 1;
+        flex: 0 0 200px;
+    }
+
+    /* --- Footer Adjustments --- */
+    .footer-middle {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .language-selector {
+        order: 2;
+        width: 100%;
+        text-align: center;
+    }
+    .language-selector select {
+        width: 80%;
+    }
+    .social-links-container {
+        order: 1;
+    }
+    .footer-nav-primary ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-nav-legal {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+}

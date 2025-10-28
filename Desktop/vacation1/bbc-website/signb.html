@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC Sign In</title>
+
+    <style>
+/* Basic Reset and Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Solid Black Background */
+    color: #fff; /* White Text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --- Main Login Form Container --- */
+
+.login-container {
+    max-width: 400px; /* Constrain content width */
+    width: 90%;
+    padding: 20px;
+    text-align: center; /* Center form elements horizontally */
+    margin: auto; /* Center vertically within the body flex context */
+}
+
+/* --- BBC Logo --- */
+
+.logo-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.bbc-logo-box {
+    background-color: #fff;
+    color: #000;
+    font-weight: 900;
+    font-size: 16px;
+    padding: 2px 5px;
+    margin: 0 1px;
+    border-radius: 2px;
+}
+
+/* --- Title --- */
+
+.main-title {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* --- Form Elements --- */
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff; /* White underline */
+    background: transparent;
+    outline: none;
+    z-index: 2;
+    position: relative;
+}
+
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 16px;
+    color: #fff;
+
+    
+}
+
+/* Move label up when input is focused or filled */
+
+
+
+.continue-button {
+    width: 100%;
+    max-width: 350px;
+    padding: 12px 0;
+    background-color: #007bff; /* Bright blue color */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.15s;
+}
+
+.continue-button:hover {
+    background-color: #0056b3; 
+/* --- Footer --- */
+
+.login-footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.login-footer a {
+    font-size: 12px;
+    color: #fff;
+   
+}
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <header class="logo-header">
+            <span class="bbc-logo-box">B</span>
+            <span class="bbc-logo-box">B</span>
+            <span class="bbc-logo-box">C</span>
+        </header>
+
+        <h1 class="main-title">Enter your email address to sign in or create an account</h1>
+
+        <form class="login-form">
+            <div class="input-group">
+                <input type="email" id="email" required>
+                <label for="email">Email</label>
+            </div>
+            
+            <button type="submit" class="continue-button"><a href="index.html"><a href="newsb.html"><a href="sportb.html">Continue</a></a></a></button>
+        </form>
+
+        <a href="#" class="help-link">Get help signing in</a>
+
+    </div>
+
+    <footer class="login-footer">
+        <a href="#">More about BBC accounts</a>
+    </footer>
+
+</body>
+</html>

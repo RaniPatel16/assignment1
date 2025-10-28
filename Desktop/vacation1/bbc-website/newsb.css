@@ -1,0 +1,983 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.highlight-news {
+    
+    color: #000 !important; 
+    /* Adds the underline */
+    text-decoration: underline;
+    
+    font-weight: 900 !important; 
+}
+
+
+
+.bbc-header {
+    border-bottom: 1px solid #ccc;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.eq-logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    flex-basis: 100px; 
+}
+
+.bbc-logo-container {
+    flex-grow: 1; 
+    text-align: center;
+}
+
+.bbc-logo {
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+    background-color: #000;
+    padding: 2px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.sign-in-button {
+    padding: 5px 15px;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    flex-basis: 100px; 
+    text-align: center;
+}
+
+
+.header-nav {
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header-nav ul {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 10px;
+}
+
+.header-nav ul li a {
+    padding: 0 5px;
+    font-size: 14px;
+    color: #000; 
+    font-weight: bold;
+    white-space: nowrap;
+}
+/* 1 */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.news-container {
+    max-width: 1200px; 
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.story-headline {
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0 0 8px 0;
+    color: #000;
+}
+
+.story-headline.large {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.story-headline.small {
+    font-size: 17px;
+}
+
+.story-summary {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.story-meta {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+
+.live-tag {
+    font-size: 12px;
+    font-weight: bold;
+    color: #e50000; 
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.live-dot {
+    height: 8px;
+    width: 8px;
+    background-color: #e50000;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
+.image-container, .main-image-container {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.main-image, .live-image, .story-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.middle-stories-grid .image-container {
+    height: 120px;
+}
+.middle-stories-grid .story-image {
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.top-story-grid {
+    display: grid;
+
+    grid-template-columns: 1.5fr 3fr 1.5fr; 
+    gap: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.live-story {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+}
+
+.right-block {
+    
+    border-left: 1px solid #eee;
+    padding-left: 20px;
+}
+
+
+.right-block .live-image {
+    height: 150px; 
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+
+
+.middle-stories-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.middle-stories-grid .story-item {     
+    border-right: 1px solid #eee; 
+    padding-right: 20px;
+}
+
+
+.middle-stories-grid .story-item:nth-child(3),
+.middle-stories-grid .story-item:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+
+.middle-stories-grid .story-item:nth-child(4),
+.middle-stories-grid .story-item:nth-child(5) {
+    padding-left: 20px;
+}
+
+
+
+.bottom-stories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.bottom-stories-grid .story-item {
+    padding-right: 20px;
+    border-right: 1px solid #eee;
+}
+
+.bottom-stories-grid .story-item:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.bottom-stories-grid .story-headline {
+    font-size: 16px;
+    font-weight: normal;
+    font-weight: bold; 
+}
+/* 2 */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.explore-container {
+    max-width: 1200px; 
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.explore-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+    color: #555;
+    text-transform: uppercase;
+}
+
+.article-headline {
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0 0 8px 0;
+    color: #000;
+}
+
+.article-headline.large {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.article-headline.small {
+    font-size: 17px;
+}
+
+.article-summary {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.article-meta {
+    font-size: 12px;
+    color: #999;
+    margin-top: 5px;
+}
+
+
+.image-wrapper {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; 
+}
+
+.top-articles-row .image-dominant-card .image-wrapper {
+    height: 250px; /* Large image in the middle */
+}
+.top-articles-row .image-dominant-card .article-image {
+    height: 100%;
+}
+
+.top-articles-row .mixed-card .image-wrapper.small {
+    height: 150px; /* Smaller image in the right top card */
+    margin-bottom: 15px;
+}
+.top-articles-row .mixed-card .image-wrapper.small .article-image {
+    height: 100%;
+}
+
+.bottom-articles-row .image-wrapper {
+    height: 180px; /* Images in the bottom row */
+}
+.bottom-articles-row .article-image {
+    height: 100%;
+}
+
+/* --- Grid Layouts --- */
+
+/* Top Articles Row (3 Columns: Text, Image, Mixed) */
+.top-articles-row {
+    display: grid;
+    grid-template-columns: 1.5fr 3fr 1.5fr; /* Approximate proportions from image */
+    gap: 20px;
+    border-bottom: 1px solid #eee; /* Light separator */
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.top-articles-row .text-only-card {
+    /* Aligns content to the bottom as seen in the image */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Separator for the rightmost card in the top row */
+.top-articles-row .mixed-card {
+    border-left: 1px solid #eee;
+    padding-left: 20px;
+}
+
+
+/* Bottom Articles Row (3 Equal Columns) */
+.bottom-articles-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+/* Add vertical separators between the cards in the bottom row */
+.bottom-articles-row .article-card {
+    border-right: 1px solid #eee;
+    padding-right: 20px;
+}
+
+/* Remove separator for the last card */
+.bottom-articles-row .article-card:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+/* 3 */
+
+/* Basic Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+/* --- Section Header --- */
+
+.most-read-section {
+    max-width: 1200px;
+    margin: 40px auto; /* Add vertical space */
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000; /* Main black separator line */
+}
+
+/* --- Grid Layout (5 Columns) --- */
+
+.read-grid {
+    display: grid;
+    /* Create 5 equal columns for the items */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px; /* Space between columns */
+}
+
+.read-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Item Styling --- */
+
+.read-item {
+    font-size: 16px;
+    line-height: 1.3;
+    color: #000;
+    padding: 10px 0;
+    margin: 0;
+    /* Ensures the two items are vertically aligned */
+    height: 90px; 
+    display: flex;
+    align-items: flex-start;
+}
+
+.read-item:first-child {
+    border-bottom: 1px solid #ccc; /* Separator between the top and bottom item in each column */
+}
+
+/* Number Styling */
+.number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+    line-height: 1; /* Align the number's text baseline */
+    margin-right: 10px;
+    /* Adjust positioning to align the content correctly */
+    transform: translateY(-2px); 
+    display: block;
+    width: 30px; /* Reserve space for two-digit numbers (like 10) */
+    text-align: left;
+}
+/* 4 */
+/* Basic Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Section Header --- */
+
+.sport-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000; /* Main black separator line */
+}
+
+/* --- Typography & Metadata --- */
+
+.headline {
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 5px 0 8px 0;
+    color: #000;
+}
+
+.headline.large {
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+.headline.small {
+    font-size: 16px;
+}
+
+.summary {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.meta {
+    font-size: 12px;
+    color: #999;
+    margin-top: 8px;
+}
+
+.live-tag {
+    font-size: 14px;
+    font-weight: bold;
+    color: #e50000; /* Red color */
+    margin-bottom: 5px;
+}
+
+/* --- Top Grid (Asymmetrical Layout) --- */
+
+.sport-main-grid {
+    display: grid;
+    /* Proportions: Text Block (1.5fr), Large Image (3fr), Mixed Content (1.5fr) */
+    grid-template-columns: 1.5fr 3fr 1.5fr; 
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.grid-item.text-block {
+    /* Aligning the text to the top for the left column */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Central Image Styling */
+.main-image-container {
+    height: 250px; 
+    overflow: hidden;
+}
+
+.main-image {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Right Column Mixed Block Styling */
+.grid-item.mixed-block {
+    border-left: 1px solid #eee;
+    padding-left: 20px;
+    padding-top: 5px; /* Slight vertical alignment adjustment */
+}
+
+.image-wrapper.small-image {
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.image-small {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Bottom Grid (5 Columns) --- */
+
+.sport-bottom-grid {
+    display: grid;
+    /* 5 articles in 5 columns */
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc; /* Separator between the top and bottom grids */
+}
+
+.article-card {
+    border-right: 1px solid #eee; /* Light vertical separator */
+    padding-right: 20px;
+}
+
+.article-card:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.article-card .image-wrapper {
+    height: 120px; /* Standard height for bottom row images */
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.article-card .article-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text-only-card {
+    /* Ensures alignment despite missing image padding/margin */
+    padding-top: 2px; 
+}
+
+/* fotter */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f7f7; /* Light background above/below footer */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Footer Container --- */
+.bbc-footer {
+    background-color: #f9f7f7; /* Dark background color */
+    color: #a9a9a9; /* Light grey text color */
+    padding: 30px 20px 20px;
+    width: 100%;
+}
+
+.footer-content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- Top Section: Logo and Primary Nav --- */
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.bbc-logo-container {
+    margin-bottom: 20px;
+}
+
+.bbc-logo {
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+    background-color: #000;
+    padding: 2px 10px;
+    border-radius: 4px;
+}
+
+.footer-nav-primary ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #110a0a;
+}
+
+/* --- Middle Section: Language and Social --- */
+.footer-middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid #333; /* Separator line */
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+.language-selector select {
+    background-color: #333; /* Dark background for the dropdown */
+    color: #e3dddd;
+    border: 1px solid #666;
+    padding: 8px 12px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.social-links-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.follow-text {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.social-icons a {
+    font-size: 18px;
+    padding: 0 5px;
+    color: #a9a9a9;
+}
+
+/* --- Bottom Section: Legal Links and Copyright --- */
+.footer-nav-legal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 15px;
+    font-size: 11px;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.footer-nav-legal a {
+    color: #0f0909;
+}
+
+.copyright {
+    font-size: 11px;
+    color: #e00808;
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* mobile */
+
+@media (max-width: 600px) {
+
+    /* --- Header Adjustments --- */
+    .header-top {
+        /* Stack logo and sign-in button vertically or center elements if space is tight */
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .eq-logo, .sign-in-button {
+        flex-basis: auto; /* Allow elements to take natural width */
+        margin: 5px 10px;
+    }
+
+    /* Nav bar will scroll horizontally (already configured with inline-flex and overflow-x: auto) */
+
+    /* --- General Layout Reversion to Single Column --- */
+    .news-container, .explore-container, .most-read-section, .sport-section {
+        padding: 0 10px; /* Reduce padding on mobile */
+    }
+
+    /* --- News Section Grid Changes --- */
+
+    .top-story-grid {
+        /* Mobile: All three blocks stack in a single column */
+        grid-template-columns: 1fr;
+        gap: 10px; /* Reduce gap */
+        padding-bottom: 20px;
+    }
+
+    .live-story {
+        /* Full width and back to default top alignment for better mobile flow */
+        justify-content: flex-start;
+    }
+
+    .right-block {
+        /* Remove left border and padding to make it full width */
+        border-left: none;
+        padding-left: 0;
+        margin-top: 15px; /* Add some separation */
+    }
+
+    .middle-stories-grid {
+        /* Mobile: Two stories side-by-side */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .middle-stories-grid .story-item,
+    .middle-stories-grid .story-item:nth-child(3),
+    .middle-stories-grid .story-item:last-child {
+        border-right: none; /* Remove all vertical separators */
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .middle-stories-grid .story-item:nth-child(odd) { /* Re-add separator on odd items */
+        border-right: 1px solid #eee;
+        padding-right: 10px;
+    }
+
+    .middle-stories-grid .story-item:nth-child(even) { /* Remove left padding on even items */
+        padding-left: 10px;
+    }
+
+
+    .bottom-stories-grid {
+        /* Mobile: All stories stack in a single column */
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .bottom-stories-grid .story-item {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid #eee; /* Add horizontal separator */
+        padding-bottom: 15px;
+    }
+    .bottom-stories-grid .story-item:last-child {
+        border-bottom: none;
+    }
+    
+
+    /* --- Explore Section Grid Changes --- */
+    .top-articles-row {
+        /* Mobile: All three cards stack in a single column */
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .top-articles-row .image-dominant-card .image-wrapper {
+        height: 200px; /* Smaller image on mobile */
+    }
+
+    .top-articles-row .mixed-card {
+        /* Remove left border and padding */
+        border-left: none;
+        padding-left: 0;
+        margin-top: 15px;
+    }
+    
+    .top-articles-row .text-only-card {
+        justify-content: flex-start;
+    }
+
+
+    .bottom-articles-row {
+        /* Mobile: Two cards side-by-side */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .bottom-articles-row .article-card {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 15px;
+    }
+
+    .bottom-articles-row .article-card:nth-child(odd) { /* Re-add separator on odd items */
+        border-right: 1px solid #eee;
+        padding-right: 10px;
+    }
+
+    .bottom-articles-row .article-card:nth-child(even) {
+        padding-left: 10px;
+    }
+
+
+    /* --- Most Read Section Grid Changes --- */
+    .read-grid {
+        /* Mobile: Two columns for most read */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* --- Sport Section Grid Changes --- */
+    .sport-main-grid {
+        /* Mobile: All three blocks stack in a single column */
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .grid-item.mixed-block {
+        /* Remove left border and padding */
+        border-left: none;
+        padding-left: 0;
+        margin-top: 15px;
+    }
+
+    .sport-bottom-grid {
+        /* Mobile: Two columns for bottom sport articles */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .article-card {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 15px;
+    }
+    
+    .article-card:nth-child(odd) {
+        border-right: 1px solid #eee;
+        padding-right: 10px;
+    }
+    
+    .article-card:nth-child(even) {
+        padding-left: 10px;
+    }
+
+    .article-card:last-child {
+        border-bottom: none;
+    }
+
+    /* --- Footer Adjustments --- */
+    .footer-middle {
+        /* Stack language selector and social links vertically */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .language-selector {
+        margin-bottom: 15px;
+    }
+
+    .footer-nav-legal {
+        justify-content: center;
+        text-align: center;
+    }
+}
