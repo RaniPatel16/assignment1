@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rani Patel - Resume</title>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #475569;
+            --accent: #0f172a;
+            --light-border: #cbd5e1;
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: #f1f5f9;
+            color: var(--text-main);
+            line-height: 1.5;
+            padding: 40px;
+        }
+
+        .resume-container {
+            background-color: var(--primary-bg);
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 50px 60px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        /* Print Settings */
+        @media print {
+            body { 
+                background-color: #fff; 
+                padding: 0; 
+            }
+            .resume-container {
+                box-shadow: none;
+                padding: 0;
+                margin: 0;
+                max-width: 100%;
+            }
+            .no-print { display: none !important; }
+            @page { margin: 0.4in; }
+            .right-col, .left-col {
+                break-inside: avoid;
+            }
+        }
+
+        /* HEADER */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-family: var(--font-heading);
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 3px solid var(--accent);
+            padding-bottom: 5px;
+            line-height: 1;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-bottom: 6px;
+        }
+
+        .contact-item a {
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+
+        .contact-item i {
+            font-size: 1.2rem;
+            color: var(--accent);
+            width: 25px;
+            text-align: center;
+            background: #f1f5f9;
+            border-radius: 50%;
+            padding: 4px;
+        }
+
+        /* LINKS BAR */
+        .links-bar {
+            background-color: #f8fafc;
+            border-top: 1px solid var(--light-border);
+            border-bottom: 1px solid var(--light-border);
+            padding: 12px 0;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .links-bar a {
+            color: var(--text-main);
+            text-decoration: none;
+            position: relative;
+        }
+
+        .links-bar a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: var(--text-main);
+        }
+
+        /* MAIN LAYOUT */
+        .main-content {
+            display: grid;
+            grid-template-columns: 35% 65%;
+            gap: 40px;
+        }
+
+        .left-col {
+            border-right: 1px solid var(--light-border);
+            padding-right: 30px;
+        }
+
+        /* SECTION TITLES */
+        h2 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            color: var(--accent);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--light-border);
+            padding-bottom: 5px;
+        }
+
+        /* LEFT COLUMN CONTENT */
+        .skills-group {
+            margin-bottom: 15px;
+        }
+
+        .skills-title {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--accent);
+            margin-bottom: 3px;
+        }
+
+        .skills-list {
+            list-style: none;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .skills-list li {
+            position: relative;
+            padding-left: 12px;
+            margin-bottom: 4px;
+        }
+
+        .skills-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--light-border);
+        }
+
+        .education-item, .cert-item {
+            margin-bottom: 15px;
+        }
+
+        .edu-school {
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--accent);
+        }
+
+        .edu-degree {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .cert-list {
+            list-style: none;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5px;
+        }
+        
+        .cert-list.single-col {
+            grid-template-columns: 1fr;
+        }
+
+        .cert-list li {
+            position: relative;
+            padding-left: 12px;
+            margin-bottom: 4px;
+        }
+
+        .cert-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--light-border);
+        }
+
+        /* RIGHT COLUMN CONTENT */
+        .project-item {
+            margin-bottom: 20px;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .project-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .project-meta {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        .project-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-left: 15px;
+            list-style-type: disc;
+        }
+
+        .project-desc li {
+            margin-bottom: 4px;
+        }
+
+        .project-desc li strong {
+            color: var(--text-main);
+        }
+        
+        .project-links {
+            margin-top: 5px;
+            font-size: 0.8rem;
+            margin-left: 15px;
+        }
+        
+        .project-links a {
+            color: var(--text-muted);
+            text-decoration: underline;
+            margin-right: 15px;
+        }
+
+        .achievements-list {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-left: 15px;
+        }
+
+        .achievements-list li {
+            margin-bottom: 8px;
+        }
+
+        .achievements-list strong {
+            color: var(--text-main);
+        }
+
+        /* Floating Download Button */
+        .download-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: var(--accent);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: 500;
+            font-size: 0.9rem;
+            border-radius: 5px;
+            z-index: 1000;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .download-btn:hover {
+            background-color: #334155;
+            transform: translateY(-2px);
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('download') === 'true') {
+                setTimeout(() => window.print(), 500);
+            }
+        };
+    </script>
+</head>
+<body>
+    <button class="download-btn no-print" onclick="window.print()"><i class="fas fa-file-pdf" style="margin-right: 8px;"></i>Download PDF</button>
+
+    <div class="resume-container">
+        <!-- HEADER -->
+        <header class="header">
+            <h1>RANI PATEL</h1>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>+91 9898225910</span>
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact-item">
+                    <a href="mailto:ranipatel16@example.com">ranipatel16@example.com</a>
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-item">
+                    <a href="https://github.com/RaniPatel16" target="_blank">github.com/RaniPatel16</a>
+                    <i class="fas fa-globe"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- LINKS BAR -->
+        <nav class="links-bar">
+            <a href="https://github.com/RaniPatel16" target="_blank">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/rani-patel-5aa5a3397" target="_blank">LinkedIn Profile</a>
+            <a href="#" target="_blank">Portfolio Website</a>
+            <a href="#" target="_blank">LeetCode Profile</a>
+            <a href="https://www.youtube.com/@RaniPatel-l2o" target="_blank">YouTube Profile</a>
+            <a href="#" target="_blank">X (Twitter) Profile</a>
+        </nav>
+
+        <!-- MAIN TWO-COLUMN LAYOUT -->
+        <main class="main-content">
+            <!-- LEFT COLUMN -->
+            <aside class="left-col">
+                <h2>SKILLS</h2>
+                
+                <div class="skills-group">
+                    <div class="skills-title">Frontend Development:</div>
+                    <ul class="skills-list">
+                        <li>HTML5, CSS3, React.js, Next.js, Responsive Web Design, UI/UX Fundamentals</li>
+                    </ul>
+                </div>
+
+                <div class="skills-group">
+                    <div class="skills-title">Backend Development:</div>
+                    <ul class="skills-list">
+                        <li>Node.js, RESTful APIs, Express.js, Authentication & Authorization</li>
+                    </ul>
+                </div>
+
+                <div class="skills-group">
+                    <div class="skills-title">Programming Languages:</div>
+                    <ul class="skills-list">
+                        <li>JavaScript, HTML, CSS</li>
+                    </ul>
+                </div>
+
+                <div class="skills-group">
+                    <div class="skills-title">Database & Data Management:</div>
+                    <ul class="skills-list">
+                        <li>MongoDB, Mongoose (Basic)</li>
+                    </ul>
+                </div>
+
+                <div class="skills-group">
+                    <div class="skills-title">Tools & Deployment:</div>
+                    <ul class="skills-list">
+                        <li>Git, GitHub, Postman, VSCode, Netlify, Render, Figma</li>
+                    </ul>
+                </div>
+
+                <h2>EDUCATION</h2>
+                <div class="education-item">
+                    <div class="edu-school">Rai University, Ahmedabad</div>
+                    <ul class="skills-list" style="margin-top: 4px;">
+                        <li>Bachelor of Technology<br>2024 – 2028</li>
+                        <li>CGPA: 8.5/10</li>
+                    </ul>
+                </div>
+
+                <h2>CERTIFICATIONS</h2>
+                <div class="skills-group">
+                    <div class="skills-title">Core Programming & Design</div>
+                    <ul class="cert-list">
+                        <li>Problem Solving</li>
+                        <li>JavaScript</li>
+                        <li>Node.js</li>
+                        <li>UI/UX Design</li>
+                        <li>React</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+
+                <div class="skills-group">
+                    <div class="skills-title">Cloud & Platforms</div>
+                    <ul class="cert-list single-col">
+                        <li>GitHub Copilot Fundamentals</li>
+                        <li>MongoDB Basics (MongoDB University)</li>
+                        <li>Responsive Web Design (freeCodeCamp)</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- RIGHT COLUMN -->
+            <section class="right-col">
+                <h2>PROJECTS</h2>
+                
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-title">BigBasket Clone - Grocery Platform</span>
+                        <span class="project-meta">( June - August / 2025 )</span>
+                    </div>
+                    <ul class="project-desc">
+                        <li><strong>Technologies:</strong> HTML5, CSS3, JavaScript, DOM Manipulation.</li>
+                        <li><strong>Role:</strong> Spearheaded frontend architecture replicating complex e-commerce layouts and search functionality.</li>
+                        <li>Engineered seamless cart management and product filtering systems to enhance user discovery paths.</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/RaniPatel16/bigbasket" target="_blank">GitHub Repo</a>
+                        <a href="https://bigbasket-clone-rani.netlify.app" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-title">LedgerCore - Expense Management</span>
+                        <span class="project-meta">- Hackathon Project</span>
+                    </div>
+                    <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 4px; font-weight: 600;">( Team Collaboration Web App )</div>
+                    <ul class="project-desc">
+                        <li>Built a full-stack expense tracker (MERN stack) for collaborative budget monitoring and visualization.</li>
+                        <li>Designed secure REST APIs enabling users to record, categorize, and visualzie transactional data efficiently.</li>
+                        <li>Integrated responsive charting modules for comprehensive financial insights and analytics.</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://exp-ohy4.onrender.com/" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-title">LearnSmart AI - EdTech Platform</span>
+                        <span class="project-meta">- Hackathon Project</span>
+                    </div>
+                    <ul class="project-desc">
+                        <li>Developed an interactive educational dashboard emphasizing personalized learning curves.</li>
+                        <li>Implemented an AI-assisted tutor module to provide instant feedback and resource recommendations.</li>
+                        <li>Optimized frontend components using React.js to achieve sub-second page load speeds.</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://innovators-prime.netlify.app/" target="_blank">Live Demo</a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <span class="project-title">Figma UI/UX Designs</span>
+                    </div>
+                    <ul class="project-desc" style="display: grid; grid-template-columns: 1fr 1fr; list-style-type: none; margin-left: 0;">
+                        <li style="padding-left: 12px; position: relative;"><span style="position: absolute; left: 0;">•</span> RedBus Web Design</li>
+                        <li style="padding-left: 12px; position: relative;"><span style="position: absolute; left: 0;">•</span> CodingGita Web Prototype</li>
+                        <li style="padding-left: 12px; position: relative;"><span style="position: absolute; left: 0;">•</span> Netflix Design System</li>
+                        <li style="padding-left: 12px; position: relative;"><span style="position: absolute; left: 0;">•</span> Modern Hotel Booking</li>
+                    </ul>
+                </div>
+
+                <h2>ACHIEVEMENTS</h2>
+                <ul class="achievements-list">
+                    <li>Achieved <strong>8.5 CGPA</strong> in Bachelor of Technology, demonstrating a strong academic background and consistency.</li>
+                    <li>Developed and deployed over <strong>10+ sophisticated web applications</strong> and UI/UX prototypes, gaining extensive practical experience.</li>
+                    <li>Active participant in multiple collegiate <strong>hackathons</strong>, successfully designing MVPs under tight 48-hour deadlines while managing team dynamics.</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
