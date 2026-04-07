@@ -1,0 +1,159 @@
+# 🍃 MongoDB Assignment
+
+## 📌 Overview
+
+This repository contains a MongoDB assignment designed to demonstrate the basics of working with MongoDB, including database creation, collections, and CRUD operations.
+It is beginner-friendly and focuses on practical implementation.
+
+---
+
+## 🎯 Objectives
+
+* Understand MongoDB database structure
+* Learn how to create and manage collections
+* Perform CRUD operations (Create, Read, Update, Delete)
+* Practice basic queries and data handling
+
+---
+
+## 🛠️ Technologies Used
+
+* MongoDB
+* MongoDB Compass / Mongo Shell
+* Node.js (optional for integration)
+
+---
+
+## 📂 Project Structure
+
+```
+mongodb-assignment/
+│── README.md
+│── queries.js
+│── sample-data.json
+```
+
+---
+
+## 📊 Database & Collection
+
+* **Database Name:** `studentDB`
+* **Collection Name:** `students`
+
+---
+
+## 🧾 Sample Data
+
+```json
+{
+  "name": "Rani Patel",
+  "age": 20,
+  "course": "Computer Science",
+  "skills": ["HTML", "CSS", "JavaScript"]
+}
+```
+
+---
+
+## ⚙️ CRUD Operations
+
+### ➕ Create (Insert)
+
+```js
+db.students.insertOne({
+  name: "Rani Patel",
+  age: 20,
+  course: "Computer Science"
+})
+```
+
+---
+
+### 📖 Read (Find)
+
+```js
+db.students.find()
+```
+
+```js
+db.students.find({ age: { $gt: 18 } })
+```
+
+---
+
+### ✏️ Update
+
+```js
+db.students.updateOne(
+  { name: "Rani Patel" },
+  { $set: { age: 21 } }
+)
+```
+
+---
+
+### ❌ Delete
+
+```js
+db.students.deleteOne({ name: "Rani Patel" })
+```
+
+---
+
+## 🔍 Additional Queries
+
+### Find specific fields
+
+```js
+db.students.find({}, { name: 1, course: 1 })
+```
+
+### Sort data
+
+```js
+db.students.find().sort({ age: -1 })
+```
+
+### Limit results
+
+```js
+db.students.find().limit(2)
+```
+
+---
+
+## 🚀 How to Run
+
+1. Install MongoDB
+2. Open MongoDB Compass or Mongo Shell
+3. Create database and collection
+4. Run the queries from `queries.js`
+
+---
+
+## 📈 Learning Outcomes
+
+* Gained understanding of MongoDB basics
+* Learned CRUD operations
+* Practiced real-world database queries
+
+---
+
+## 💡 Future Improvements
+
+* Add aggregation pipelines
+* Connect with Node.js backend
+* Build a full-stack project using MongoDB
+
+---
+
+## 📫 Author
+
+**Rani Patel**
+💻 Aspiring Full Stack Developer
+
+---
+
+## ⭐ Support
+
+If you found this helpful, give it a ⭐ on GitHub!
